@@ -28,4 +28,5 @@ def pregunta_11():
 
     z = tbl1.copy()
     tabla_agrupada = z.groupby("c0")["c4"].apply(",".join).reset_index()
-    tabla_agrupada
+    df = pd.DataFrame(tabla_agrupada)
+    df
