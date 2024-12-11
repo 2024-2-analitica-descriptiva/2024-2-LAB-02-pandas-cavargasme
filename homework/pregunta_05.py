@@ -24,5 +24,5 @@ def pregunta_05():
     E    9
     Name: c2, dtype: int64
     """
-gp2 =  tbl0.groupby("c1")["c2"].max() # ademas del group by se debe pone runa funcionalidad adicional 
-gp2
+    gp2 =  tbl0.groupby("c1")["c2"].max() # ademas del group by se debe pone runa funcionalidad adicional 
+    return gp2

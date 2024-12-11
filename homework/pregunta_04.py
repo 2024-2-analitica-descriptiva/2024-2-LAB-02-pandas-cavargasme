@@ -25,5 +25,5 @@ def pregunta_04():
     Name: c2, dtype: float64
     """
 
-gp1 =  tbl0.groupby("c1")["c2"].mean() # ademas del group by se debe pone runa funcionalidad adicional 
-gp1
+    gp1 =  tbl0.groupby("c1")["c2"].mean() # ademas del group by se debe pone runa funcionalidad adicional 
+    return gp1
