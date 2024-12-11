@@ -28,5 +28,5 @@ def pregunta_09():
 
     """
     gp5 = tbl0.copy()
-    gp5["year"]= gp5["c3"][0][:4]
-    gp5
+    gp5["year"] = gp5["c3"].str[:4]  
+    return gp5

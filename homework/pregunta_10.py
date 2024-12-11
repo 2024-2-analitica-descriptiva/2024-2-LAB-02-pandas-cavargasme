@@ -28,4 +28,4 @@ def pregunta_10():
     z["c2"] = z["c2"].astype(str)
     tabla_agrupada = z.groupby("c1")["c2"].apply(":".join)
     df = pd.DataFrame(tabla_agrupada)
-    df
+    return df

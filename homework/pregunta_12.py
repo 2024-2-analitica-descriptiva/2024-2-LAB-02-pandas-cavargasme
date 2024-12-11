@@ -35,4 +35,4 @@ def pregunta_12():
     tabla_agrupada= z.groupby("c0")["c5"]
     lista_ordenada= tabla_agrupada.apply(lambda x: ",".join(sorted(list(x)))).reset_index()
     df = pd.DataFrame(lista_ordenada)
-    df.head()
+    return df 

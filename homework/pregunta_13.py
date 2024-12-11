@@ -28,4 +28,4 @@ def pregunta_13():
 
     com= pd.merge(tbl0,tbl2,on= 'c0')
     com_agrupado= com.groupby("c1")["c5b"].sum()
-    com_agrupado
+    return com_agrupado
