@@ -26,6 +26,6 @@ def pregunta_10():
     """
     z= tbl0.copy()
     z["c2"] = z["c2"].astype(str)
-    tabla_agrupada = z.groupby("c1")["c2"].apply(":".join)
+    tabla_agrupada = z.groupby("c1")["c2"].apply(lambda x: ":".join(sorted(x)))
     df = pd.DataFrame(tabla_agrupada)
     return df
